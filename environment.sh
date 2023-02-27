@@ -23,7 +23,6 @@ else
     if ! echo $PATH | grep --silent $INSTALL_PATH/$MINICONDA_PATH; then
         export PATH=$INSTALL_PATH/$MINICONDA_PATH:$PATH; fi
         export MINICONDA=$INSTALL_PATH/miniconda3
-#    conda install -y $(echo $REQUIREMENTS)
 fi
 
 if [ ! -d $PROJECT_PATH/condavenv ]; then
@@ -31,3 +30,4 @@ if [ ! -d $PROJECT_PATH/condavenv ]; then
 if ! echo $PATH | grep --silent ^$PROJECT_PATH/condavenv/bin; then
     conda init --all
     conda activate $PROJECT_PATH/condavenv; fi
+conda install -y $(echo $REQUIREMENTS)

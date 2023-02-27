@@ -1,0 +1,6 @@
+help("modules")
+pip list
+pip show numpy
+pip search tesseract - deprecated now
+pip freeze > requirements.txt
+
