@@ -27,7 +27,8 @@ fi
 
 if [ ! -d $PROJECT_PATH/condavenv ]; then
     conda create -y python=3.7 pip --prefix $PROJECT_PATH/condavenv; fi
-if ! echo $PATH | grep --silent ^$PROJECT_PATH/condavenv/bin; then
-    conda init --all
-    conda activate $PROJECT_PATH/condavenv; fi
-conda install -y $(echo $REQUIREMENTS)
+#if ! echo $PATH | grep --silent ^$PROJECT_PATH/condavenv/bin; then
+#    conda init --all
+#    conda activate --stack $PROJECT_PATH/condavenv; fi
+#if echo $PATH | grep --silent ^$PROJECT_PATH/condavenv/bin; then
+#    conda install -y $(echo $REQUIREMENTS); fi
