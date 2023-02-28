@@ -7,7 +7,9 @@ if __name__ == '__main__':
         integer = int(sys.argv[1])
         if integer == 0:
             print("I'm Zero.")
+        elif integer % 2:
+            print("I'm Odd.")
         else:
-            print("I'm Odd.") if integer % 2 else print("I'm Even.")
+            print("I'm Even.")
     except:
         print('ERROR')

@@ -1,6 +1,5 @@
 import string
 import sys
-from sys import stdin
 
 
 def text_analyzer(text=None, *args):
