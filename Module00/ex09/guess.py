@@ -28,9 +28,3 @@ if __name__ == '__main__':
             print("That's not a number.")
     if answer == 'exit':
         print('Goodbye!')
-
-
-
-
-
-
